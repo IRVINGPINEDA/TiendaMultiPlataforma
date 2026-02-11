@@ -1,0 +1,14 @@
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.deps.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.runtimeconfig.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.pdb
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.AssemblyInfo.cs
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\refint\ProductHub.Infrastructure.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.pdb
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.genruntimeconfig.cache
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ref\ProductHub.Infrastructure.dll
