@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "djQ+qAf0HoQVxQUvnmvzbZ39wHj57AUNts7yubPmnp4=",
+  "Source": "ProductHub.Api",
+  "BasePath": "_content/ProductHub.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProductHub.Api\\wwwroot",
+      "Source": "ProductHub.Api",
+      "ContentRoot": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\wwwroot\\",
+      "BasePath": "_content/ProductHub.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\wwwroot\\uploads\\products\\d08943f0337341bab0a02098edcf70ee.webp",
+      "SourceId": "ProductHub.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\wwwroot\\",
+      "BasePath": "_content/ProductHub.Api",
+      "RelativePath": "uploads/products/d08943f0337341bab0a02098edcf70ee.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\d08943f0337341bab0a02098edcf70ee.webp"
+    }
+  ]
+}
