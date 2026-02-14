@@ -28,3 +28,4 @@ C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\o
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.pdb
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.genruntimeconfig.cache
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ref\ProductHub.Web.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.sourcelink.json

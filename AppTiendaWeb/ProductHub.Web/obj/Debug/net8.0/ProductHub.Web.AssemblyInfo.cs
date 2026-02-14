@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductHub.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41405559bcf9ee36c2420d95fc7ce155f66fffd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductHub.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductHub.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
