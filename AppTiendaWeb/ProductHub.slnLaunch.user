@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "ProductHub.Api\\ProductHub.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ProductHub.Web\\ProductHub.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\irvin\\.nuget\\packages\\": {}
+    "C:\\Users\\ferna\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Web\\ProductHub.Web.csproj",
+      "projectUniqueName": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Web\\ProductHub.Web.csproj",
       "projectName": "ProductHub.Web",
-      "projectPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Web\\ProductHub.Web.csproj",
-      "packagesPath": "C:\\Users\\irvin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Web\\obj\\",
+      "projectPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Web\\ProductHub.Web.csproj",
+      "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+      "outputPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\irvin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -43,7 +51,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -67,7 +76,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
