@@ -11,6 +11,8 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Product> Products => Set<Product>();
+    public DbSet<Order> Orders => Set<Order>();
+    public DbSet<OrderItem> OrderItems => Set<OrderItem>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -50,5 +52,77 @@ public class AppDbContext : DbContext
             .HasDefaultValue(true);
 
         product.HasIndex(p => p.IsActive);
+
+        var order = modelBuilder.Entity<Order>();
+
+        order.ToTable("Orders");
+        order.HasKey(o => o.Id);
+
+        order.Property(o => o.ClienteNombre)
+            .IsRequired()
+            .HasMaxLength(120);
+
+        order.Property(o => o.ClienteTelefono)
+            .HasMaxLength(40);
+
+        order.Property(o => o.DireccionEntrega)
+            .IsRequired()
+            .HasMaxLength(250);
+
+        order.Property(o => o.Notas)
+            .HasMaxLength(1000);
+
+        order.Property(o => o.Estado)
+            .IsRequired()
+            .HasMaxLength(30)
+            .HasDefaultValue(OrderStatus.Pendiente);
+
+        order.Property(o => o.Canal)
+            .IsRequired()
+            .HasMaxLength(30)
+            .HasDefaultValue("Web");
+
+        order.Property(o => o.Total)
+            .HasPrecision(18, 2)
+            .IsRequired();
+
+        order.Property(o => o.CreatedAt)
+            .IsRequired();
+
+        order.HasIndex(o => o.Estado);
+        order.HasIndex(o => o.CreatedAt);
+
+        var orderItem = modelBuilder.Entity<OrderItem>();
+
+        orderItem.ToTable("OrderItems");
+        orderItem.HasKey(i => i.Id);
+
+        orderItem.Property(i => i.ProductName)
+            .IsRequired()
+            .HasMaxLength(120);
+
+        orderItem.Property(i => i.UnitPrice)
+            .HasPrecision(18, 2)
+            .IsRequired();
+
+        orderItem.Property(i => i.Quantity)
+            .IsRequired();
+
+        orderItem.Property(i => i.LineTotal)
+            .HasPrecision(18, 2)
+            .IsRequired();
+
+        orderItem.HasOne(i => i.Order)
+            .WithMany(o => o.Items)
+            .HasForeignKey(i => i.OrderId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        orderItem.HasOne(i => i.Product)
+            .WithMany(p => p.OrderItems)
+            .HasForeignKey(i => i.ProductId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        orderItem.HasIndex(i => i.OrderId);
+        orderItem.HasIndex(i => i.ProductId);
     }
 }

@@ -15,4 +15,12 @@ public interface IProductsApiClient
     Task<bool> DeleteProductAsync(Guid id, CancellationToken cancellationToken = default);
 
     Task<ProductDto?> UploadImageAsync(Guid id, IFormFile file, CancellationToken cancellationToken = default);
+
+    Task<OrderDto?> CreateOrderAsync(CreateOrderRequest request, CancellationToken cancellationToken = default);
+
+    Task<IReadOnlyList<OrderDto>> GetOrdersAsync(string? estado, CancellationToken cancellationToken = default);
+
+    Task<OrderDto?> GetOrderByIdAsync(Guid id, CancellationToken cancellationToken = default);
+
+    Task<OrderDto?> UpdateOrderStatusAsync(Guid id, UpdateOrderStatusRequest request, CancellationToken cancellationToken = default);
 }

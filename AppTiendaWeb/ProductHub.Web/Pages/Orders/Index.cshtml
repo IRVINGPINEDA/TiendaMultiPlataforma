@@ -1,0 +1,125 @@
+@page
+@model ProductHub.Web.Pages.Orders.IndexModel
+@{
+    ViewData["Title"] = "Compras";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">Gestión de compras</h1>
+    <a class="btn btn-outline-primary" asp-page="/Store/Index">Ir a tienda</a>
+</div>
+
+@if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
+{
+    <div class="alert alert-success">@Model.SuccessMessage</div>
+}
+
+@if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-4">
+        <select class="form-select" asp-for="Estado">
+            <option value="">Todos los estados</option>
+            @foreach (var status in Model.AvailableStatuses)
+            {
+                <option value="@status">@status</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2 d-grid">
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+    </div>
+</form>
+
+@if (!Model.Orders.Any())
+{
+    <div class="alert alert-info">No hay compras registradas.</div>
+}
+else
+{
+    <div class="accordion" id="ordersAccordion">
+        @for (var index = 0; index < Model.Orders.Count; index++)
+        {
+            var order = Model.Orders[index];
+            var headingId = $"heading{order.Id}";
+            var collapseId = $"collapse{order.Id}";
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="@headingId">
+                    <button class="accordion-button @(index == 0 ? "" : "collapsed")" type="button" data-bs-toggle="collapse" data-bs-target="#@collapseId" aria-expanded="@(index == 0 ? "true" : "false")" aria-controls="@collapseId">
+                        <span class="me-3 fw-semibold">#@order.Id</span>
+                        <span class="me-3">@order.ClienteNombre</span>
+                        <span class="me-3 badge bg-secondary">@order.Canal</span>
+                        <span class="me-3 badge bg-info text-dark">@order.Estado</span>
+                        <span class="ms-auto">@order.Total.ToString("C")</span>
+                    </button>
+                </h2>
+                <div id="@collapseId" class="accordion-collapse collapse @(index == 0 ? "show" : "")" aria-labelledby="@headingId" data-bs-parent="#ordersAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-4"><strong>Cliente:</strong> @order.ClienteNombre</div>
+                            <div class="col-md-4"><strong>Telefono:</strong> @(string.IsNullOrWhiteSpace(order.ClienteTelefono) ? "-" : order.ClienteTelefono)</div>
+                            <div class="col-md-4"><strong>Fecha:</strong> @order.CreatedAt.ToLocalTime().ToString("g")</div>
+                            <div class="col-md-8"><strong>Direccion:</strong> @order.DireccionEntrega</div>
+                            <div class="col-md-4"><strong>Total:</strong> @order.Total.ToString("C")</div>
+                            @if (!string.IsNullOrWhiteSpace(order.Notas))
+                            {
+                                <div class="col-12"><strong>Notas:</strong> @order.Notas</div>
+                            }
+                        </div>
+
+                        <div class="table-responsive mb-3">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio unitario</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @foreach (var item in order.Items)
+                                {
+                                    <tr>
+                                        <td>@item.ProductName</td>
+                                        <td>@item.Quantity</td>
+                                        <td>@item.UnitPrice.ToString("C")</td>
+                                        <td>@item.LineTotal.ToString("C")</td>
+                                    </tr>
+                                }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <form method="post" asp-page-handler="UpdateStatus" class="row g-2 align-items-end">
+                            <input type="hidden" name="id" value="@order.Id" />
+                            <input type="hidden" name="estado" value="@Model.Estado" />
+                            <div class="col-md-4">
+                                <label class="form-label">Cambiar estado</label>
+                                <select name="newEstado" class="form-select">
+                                    @foreach (var status in Model.AvailableStatuses)
+                                    {
+                                        if (status == order.Estado)
+                                        {
+                                            <option value="@status" selected>@status</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@status">@status</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-2 d-grid">
+                                <button type="submit" class="btn btn-outline-primary">Actualizar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

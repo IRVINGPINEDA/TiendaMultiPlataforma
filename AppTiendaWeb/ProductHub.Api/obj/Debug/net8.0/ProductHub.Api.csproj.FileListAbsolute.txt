@@ -50,11 +50,6 @@ C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\o
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\ProductHub.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets\msbuild.ProductHub.Api.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.ProductHub.Api.props
-C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProductHub.Api.props
-C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProductHub.Api.props
-C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\scopedcss\bundle\ProductHub.Api.styles.css
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\ProductH.6E3C31DC.Up2Date
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\ProductHub.Api.dll
@@ -338,3 +333,11 @@ B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\Pr
 B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\ProductHub.Api.pdb
 B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\ProductHub.Api.genruntimeconfig.cache
 B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\ref\ProductHub.Api.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\bin\Debug\net8.0\ProductHub.Api.staticwebassets.endpoints.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Api\obj\Debug\net8.0\swae.build.ex.cache

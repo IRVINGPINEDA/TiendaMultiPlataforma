@@ -19,4 +19,6 @@ public class Product
     public DateTime CreatedAt { get; set; }
 
     public bool IsActive { get; set; }
+
+    public ICollection<OrderItem> OrderItems { get; set; } = [];
 }

@@ -88,6 +88,59 @@ public class ProductsApiClient : IProductsApiClient
         return await response.Content.ReadFromJsonAsync<ProductDto>(JsonOptions, cancellationToken);
     }
 
+    public async Task<OrderDto?> CreateOrderAsync(CreateOrderRequest request, CancellationToken cancellationToken = default)
+    {
+        var response = await _httpClient.PostAsJsonAsync("api/orders", request, JsonOptions, cancellationToken);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var message = await ReadErrorAsync(response, cancellationToken);
+            throw new InvalidOperationException(message);
+        }
+
+        return await response.Content.ReadFromJsonAsync<OrderDto>(JsonOptions, cancellationToken);
+    }
+
+    public async Task<IReadOnlyList<OrderDto>> GetOrdersAsync(string? estado, CancellationToken cancellationToken = default)
+    {
+        var endpoint = "api/orders";
+        if (!string.IsNullOrWhiteSpace(estado))
+        {
+            endpoint += $"?estado={Uri.EscapeDataString(estado)}";
+        }
+
+        return await _httpClient.GetFromJsonAsync<List<OrderDto>>(endpoint, JsonOptions, cancellationToken) ?? [];
+    }
+
+    public async Task<OrderDto?> GetOrderByIdAsync(Guid id, CancellationToken cancellationToken = default)
+    {
+        var response = await _httpClient.GetAsync($"api/orders/{id}", cancellationToken);
+        if (!response.IsSuccessStatusCode)
+        {
+            return null;
+        }
+
+        return await response.Content.ReadFromJsonAsync<OrderDto>(JsonOptions, cancellationToken);
+    }
+
+    public async Task<OrderDto?> UpdateOrderStatusAsync(Guid id, UpdateOrderStatusRequest request, CancellationToken cancellationToken = default)
+    {
+        var patchRequest = new HttpRequestMessage(HttpMethod.Patch, $"api/orders/{id}/status")
+        {
+            Content = JsonContent.Create(request, options: JsonOptions)
+        };
+
+        var response = await _httpClient.SendAsync(patchRequest, cancellationToken);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var message = await ReadErrorAsync(response, cancellationToken);
+            throw new InvalidOperationException(message);
+        }
+
+        return await response.Content.ReadFromJsonAsync<OrderDto>(JsonOptions, cancellationToken);
+    }
+
     private static async Task<string> ReadErrorAsync(HttpResponseMessage response, CancellationToken cancellationToken)
     {
         try

@@ -1,64 +1,67 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTiendaMovil.MainPage">
-
+             x:Class="AppTiendaMovil.MainPage"
+             Title="Tienda movil">
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="16">
+        <VerticalStackLayout Padding="18" Spacing="14">
+            <Label Text="Tienda movil" FontSize="30" FontAttributes="Bold" />
+            <Label x:Name="ApiStatusLabel" TextColor="#6c757d" FontSize="12" />
 
-            <!-- Top bar with app title and new product button -->
-            <Grid ColumnDefinitions="*,Auto">
-                <Label Text="ProductHub Admin" FontSize="18" VerticalOptions="Center" />
-                <Button Text="Nuevo producto" Grid.Column="1" BackgroundColor="#198754" TextColor="White" Clicked="OnNewProductClicked" />
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <Entry x:Name="SearchEntry" Grid.Column="0" Placeholder="Buscar por nombre o marca" TextChanged="OnSearchTextChanged" />
+                <Button Grid.Column="1" Text="Refrescar" Clicked="OnRefreshClicked" />
             </Grid>
 
-            <Label Text="Productos" FontSize="28" FontAttributes="Bold" />
-
-            <!-- Search area -->
-            <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
-                <Entry x:Name="SearchEntry" Placeholder="Buscar por nombre o marca" Grid.Column="0" />
-                <HorizontalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="6">
-                    <CheckBox x:Name="IncludeInactiveCheck" />
-                    <Label Text="Incluir inactivos" VerticalOptions="Center" />
-                </HorizontalStackLayout>
-                <Button Text="Buscar" Grid.Column="2" Clicked="OnSearchClicked" />
-            </Grid>
-
-            <!-- Header row -->
-            <Grid ColumnDefinitions="80,*,100,90,80,90,160" BackgroundColor="#f1f3f5" Padding="10">
-                <Label Text="Imagen" FontAttributes="Bold" />
-                <Label Text="Nombre" FontAttributes="Bold" Grid.Column="1" />
-                <Label Text="Marca" FontAttributes="Bold" Grid.Column="2" />
-                <Label Text="Precio" FontAttributes="Bold" Grid.Column="3" />
-                <Label Text="Stock" FontAttributes="Bold" Grid.Column="4" />
-                <Label Text="Estado" FontAttributes="Bold" Grid.Column="5" />
-                <Label Text="Acciones" FontAttributes="Bold" Grid.Column="6" HorizontalOptions="End" />
-            </Grid>
-
-            <!-- List of products -->
-            <CollectionView ItemsSource="{Binding Products}" SelectionMode="None">
+            <Label Text="Productos" FontSize="22" FontAttributes="Bold" />
+            <CollectionView x:Name="ProductsCollectionView" ItemsSource="{Binding Products}" SelectionMode="None" HeightRequest="340">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid ColumnDefinitions="80,*,100,90,80,90,160" Padding="10" BackgroundColor="White">
-                            <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="60" WidthRequest="60" Grid.Column="0" />
-                            <Label Text="{Binding Name}" Grid.Column="1" VerticalOptions="Center" />
-                            <Label Text="{Binding Brand}" Grid.Column="2" VerticalOptions="Center" />
-                            <Label Text="{Binding Price, StringFormat='${0:N2}'}" Grid.Column="3" VerticalOptions="Center" />
-                            <Label Text="{Binding Stock}" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" />
-                            <Frame Grid.Column="5" Padding="6" CornerRadius="12" BackgroundColor="{Binding StatusColor}" VerticalOptions="Center" HorizontalOptions="Center">
-                                <Label Text="{Binding StatusText}" TextColor="White" FontSize="12" HorizontalOptions="Center" />
-                            </Frame>
-                            <HorizontalStackLayout Grid.Column="6" HorizontalOptions="End" Spacing="6">
-                                <Button Text="Editar" BackgroundColor="#0d6efd" TextColor="White" Clicked="OnEditClicked" />
-                                <Button Text="Imagen" BackgroundColor="#0dcaf0" TextColor="Black" Clicked="OnImageClicked" />
-                                <Button Text="Eliminar" BackgroundColor="#dc3545" TextColor="White" Clicked="OnDeleteClicked" />
-                            </HorizontalStackLayout>
-                        </Grid>
+                        <Border Stroke="#d9d9d9" StrokeShape="RoundRectangle 8" Padding="10" Margin="0,0,0,8">
+                            <Grid ColumnDefinitions="72,*,Auto" ColumnSpacing="10">
+                                <Image Grid.Column="0" Source="{Binding ImageSource}" HeightRequest="64" WidthRequest="64" Aspect="AspectFill" />
+                                <VerticalStackLayout Grid.Column="1" Spacing="2">
+                                    <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                                    <Label Text="{Binding Marca}" FontSize="13" TextColor="#6c757d" />
+                                    <Label Text="{Binding PrecioText}" FontSize="15" FontAttributes="Bold" />
+                                    <Label Text="{Binding StockText}" FontSize="12" TextColor="#495057" />
+                                </VerticalStackLayout>
+                                <Button Grid.Column="2" Text="+ Carrito" Clicked="OnAddToCartClicked" VerticalOptions="Center" />
+                            </Grid>
+                        </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <Label Text="Carrito" FontSize="22" FontAttributes="Bold" />
+            <CollectionView ItemsSource="{Binding CartItems}" SelectionMode="None" HeightRequest="220">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="#ececec" StrokeShape="RoundRectangle 8" Padding="10" Margin="0,0,0,8">
+                            <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto" RowSpacing="4">
+                                <Label Text="{Binding ProductName}" FontAttributes="Bold" />
+                                <Label Grid.Row="1" Text="{Binding TotalText}" />
+                                <Label Grid.Row="2" Text="{Binding QuantityText}" TextColor="#6c757d" FontSize="12" />
+                                <HorizontalStackLayout Grid.Column="1" Grid.RowSpan="3" Spacing="6" VerticalOptions="Center">
+                                    <Button Text="-" Clicked="OnDecreaseCartItemClicked" />
+                                    <Button Text="+" Clicked="OnIncreaseCartItemClicked" />
+                                    <Button Text="Quitar" Clicked="OnRemoveCartItemClicked" />
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label x:Name="CartSummaryLabel" FontAttributes="Bold" />
+
+            <Label Text="Datos de compra" FontSize="20" FontAttributes="Bold" />
+            <Entry x:Name="ClienteNombreEntry" Placeholder="Nombre completo" />
+            <Entry x:Name="ClienteTelefonoEntry" Placeholder="Telefono (opcional)" Keyboard="Telephone" />
+            <Entry x:Name="DireccionEntregaEntry" Placeholder="Direccion de entrega" />
+            <Editor x:Name="NotasEditor" Placeholder="Notas (opcional)" AutoSize="TextChanges" />
+
+            <Button Text="Comprar ahora" BackgroundColor="#198754" TextColor="White" Clicked="OnCheckoutClicked" />
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
