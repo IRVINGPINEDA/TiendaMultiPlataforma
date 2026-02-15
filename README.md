@@ -112,4 +112,7 @@ Este proyecto demuestra:
 
 ## Autor
 
+IRVINGPINEDA
+LeoR1u
+
 Desarrollado como proyecto académico utilizando tecnologías modernas del ecosistema .NET.
