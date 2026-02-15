@@ -13,3 +13,18 @@ C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infra
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.genruntimeconfig.cache
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ref\ProductHub.Infrastructure.dll
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.sourcelink.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.deps.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.runtimeconfig.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.dll
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\bin\Debug\net8.0\ProductHub.Infrastructure.pdb
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.csproj.AssemblyReference.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.AssemblyInfoInputs.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.AssemblyInfo.cs
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.csproj.CoreCompileInputs.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.sourcelink.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.dll
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\refint\ProductHub.Infrastructure.dll
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.pdb
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.genruntimeconfig.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ref\ProductHub.Infrastructure.dll

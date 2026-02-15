@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj": {}
+    "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj": {
+    "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj",
+        "projectUniqueName": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj",
         "projectName": "ProductHub.Api",
-        "projectPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj",
-        "packagesPath": "C:\\Users\\irvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Api\\obj\\",
+        "projectPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Api\\ProductHub.Api.csproj",
+        "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+        "outputPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\irvin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj"
+              "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj": {
+                "projectPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj"
               }
             }
           }
@@ -41,7 +48,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -81,26 +89,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj": {
+    "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj",
+        "projectUniqueName": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj",
         "projectName": "ProductHub.Infrastructure",
-        "projectPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\irvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irvin\\OneDrive\\Escritorio\\practica tienda\\AppTiendaWeb\\ProductHub.Infrastructure\\obj\\",
+        "projectPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Infrastructure\\ProductHub.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+        "outputPath": "B:\\cosasEscuela\\UBAM\\CosasEscuela2026\\Nube\\TiendaMultiPlataforma\\AppTiendaWeb\\ProductHub.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\irvin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,7 +133,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -159,7 +175,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

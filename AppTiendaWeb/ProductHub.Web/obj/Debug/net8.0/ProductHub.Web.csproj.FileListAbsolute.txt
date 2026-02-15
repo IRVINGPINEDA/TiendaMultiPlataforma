@@ -29,3 +29,38 @@ C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\o
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.genruntimeconfig.cache
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ref\ProductHub.Web.dll
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.sourcelink.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\appsettings.Development.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\appsettings.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.staticwebassets.runtime.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.staticwebassets.endpoints.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.exe
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.deps.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.runtimeconfig.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.dll
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\bin\Debug\net8.0\ProductHub.Web.pdb
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\rpswa.dswa.cache.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.GeneratedMSBuildEditorConfig.editorconfig
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.AssemblyInfoInputs.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.AssemblyInfo.cs
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.csproj.CoreCompileInputs.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.MvcApplicationPartsAssemblyInfo.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.RazorAssemblyInfo.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.RazorAssemblyInfo.cs
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.sourcelink.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\rjimswa.dswa.cache.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\scopedcss\bundle\ProductHub.Web.styles.css
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\scopedcss\projectbundle\ProductHub.Web.bundle.scp.css
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.build.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.build.json.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.development.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\swae.build.ex.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.dll
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\refint\ProductHub.Web.dll
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.pdb
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ProductHub.Web.genruntimeconfig.cache
+B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\ref\ProductHub.Web.dll
