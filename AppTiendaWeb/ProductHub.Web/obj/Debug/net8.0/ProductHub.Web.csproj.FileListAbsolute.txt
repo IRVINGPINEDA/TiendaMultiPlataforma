@@ -67,3 +67,11 @@ C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\o
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\appsettings.Development.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\appsettings.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\ProductHub.Web.staticwebassets.runtime.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\ProductHub.Web.staticwebassets.endpoints.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\ProductHub.Web.deps.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\ProductHub.Web.runtimeconfig.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\ProductHub.Web.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Web\artifacts\verify\web\ProductHub.Web.pdb

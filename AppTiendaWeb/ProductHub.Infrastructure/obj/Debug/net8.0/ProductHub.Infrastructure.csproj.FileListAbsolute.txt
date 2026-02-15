@@ -28,3 +28,7 @@ B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\Pr
 B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.pdb
 B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ProductHub.Infrastructure.genruntimeconfig.cache
 B:\cosasEscuela\UBAM\CosasEscuela2026\Nube\TiendaMultiPlataforma\AppTiendaWeb\ProductHub.Infrastructure\obj\Debug\net8.0\ref\ProductHub.Infrastructure.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\artifacts\verify\api\ProductHub.Infrastructure.deps.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\artifacts\verify\api\ProductHub.Infrastructure.runtimeconfig.json
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\artifacts\verify\api\ProductHub.Infrastructure.dll
+C:\Users\irvin\OneDrive\Escritorio\practica tienda\AppTiendaWeb\ProductHub.Infrastructure\artifacts\verify\api\ProductHub.Infrastructure.pdb

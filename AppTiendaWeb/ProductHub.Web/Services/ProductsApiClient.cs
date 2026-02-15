@@ -88,19 +88,6 @@ public class ProductsApiClient : IProductsApiClient
         return await response.Content.ReadFromJsonAsync<ProductDto>(JsonOptions, cancellationToken);
     }
 
-    public async Task<OrderDto?> CreateOrderAsync(CreateOrderRequest request, CancellationToken cancellationToken = default)
-    {
-        var response = await _httpClient.PostAsJsonAsync("api/orders", request, JsonOptions, cancellationToken);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            var message = await ReadErrorAsync(response, cancellationToken);
-            throw new InvalidOperationException(message);
-        }
-
-        return await response.Content.ReadFromJsonAsync<OrderDto>(JsonOptions, cancellationToken);
-    }
-
     public async Task<IReadOnlyList<OrderDto>> GetOrdersAsync(string? estado, CancellationToken cancellationToken = default)
     {
         var endpoint = "api/orders";

@@ -45,6 +45,10 @@ public partial class MainPage : ContentPage
             }
 
             var products = await response.Content.ReadFromJsonAsync<List<ProductDto>>(_jsonOptions) ?? [];
+            foreach (var product in products)
+            {
+                product.ImageUrl = NormalizeProductImageUrl(product.ImageUrl);
+            }
 
             _allProducts = products
                 .Where(p => p.IsActive)
@@ -82,20 +86,71 @@ public partial class MainPage : ContentPage
 
     private static string ResolveApiBaseUrl(string configuredBaseUrl)
     {
-        var value = configuredBaseUrl;
-
-        if (!value.EndsWith('/'))
+        if (!Uri.TryCreate(configuredBaseUrl, UriKind.Absolute, out var uri))
         {
-            value += "/";
+            return configuredBaseUrl.EndsWith('/') ? configuredBaseUrl : $"{configuredBaseUrl}/";
+        }
+
+        var builder = new UriBuilder(uri);
+
+        if (DeviceInfo.Platform == DevicePlatform.Android &&
+            (builder.Host.Equals("localhost", StringComparison.OrdinalIgnoreCase) ||
+             builder.Host.Equals("127.0.0.1", StringComparison.OrdinalIgnoreCase)))
+        {
+            // The emulator cannot resolve host localhost and has issues with dev HTTPS certs for image loading.
+            builder.Host = "10.0.2.2";
+            builder.Scheme = Uri.UriSchemeHttp;
+            if (builder.Port == 7219)
+            {
+                builder.Port = 5035;
+            }
+        }
+
+        return builder.Uri.ToString();
+    }
+
+    private string? NormalizeProductImageUrl(string? imageUrl)
+    {
+        if (string.IsNullOrWhiteSpace(imageUrl))
+        {
+            return imageUrl;
+        }
+
+        Uri? resolvedUri;
+        if (!Uri.TryCreate(imageUrl, UriKind.Absolute, out resolvedUri) || resolvedUri is null)
+        {
+            if (_httpClient.BaseAddress is null)
+            {
+                return imageUrl;
+            }
+
+            resolvedUri = new Uri(_httpClient.BaseAddress, imageUrl.TrimStart('/'));
+        }
+
+        var builder = new UriBuilder(resolvedUri);
+
+        if (_httpClient.BaseAddress is not null &&
+            (builder.Host.Equals("localhost", StringComparison.OrdinalIgnoreCase) ||
+             builder.Host.Equals("127.0.0.1", StringComparison.OrdinalIgnoreCase) ||
+             builder.Host.Equals("10.0.2.2", StringComparison.OrdinalIgnoreCase)))
+        {
+            builder.Host = _httpClient.BaseAddress.Host;
+            builder.Scheme = _httpClient.BaseAddress.Scheme;
+            builder.Port = _httpClient.BaseAddress.Port;
         }
 
         if (DeviceInfo.Platform == DevicePlatform.Android &&
-            value.Contains("localhost", StringComparison.OrdinalIgnoreCase))
+            builder.Host.Equals("10.0.2.2", StringComparison.OrdinalIgnoreCase) &&
+            builder.Scheme.Equals(Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
         {
-            value = value.Replace("localhost", "10.0.2.2", StringComparison.OrdinalIgnoreCase);
+            builder.Scheme = Uri.UriSchemeHttp;
+            if (builder.Port == 7219)
+            {
+                builder.Port = 5035;
+            }
         }
 
-        return value;
+        return builder.Uri.ToString();
     }
 
     private void OnSearchTextChanged(object? sender, TextChangedEventArgs e)

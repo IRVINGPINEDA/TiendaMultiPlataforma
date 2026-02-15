@@ -19,15 +19,8 @@ builder.Services.AddHttpClient<IProductsApiClient, ProductsApiClient>((servicePr
 
     client.BaseAddress = new Uri(baseUrl, UriKind.Absolute);
 });
-builder.Services.AddSingleton<CartSessionStore>();
 
 builder.Services.AddRazorPages();
-builder.Services.AddSession(options =>
-{
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-    options.IdleTimeout = TimeSpan.FromHours(6);
-});
 
 var app = builder.Build();
 
@@ -41,7 +34,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseSession();
 app.UseAuthorization();
 
 app.MapRazorPages();
